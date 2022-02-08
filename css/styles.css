@@ -106,8 +106,7 @@ body {
 
 /* Контакты в шапке */
 .nav-contacts {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   margin-left: auto;
 }
 
@@ -127,7 +126,12 @@ body {
 .nav-contacts .contacts:focus {
   color: var(--accent-color);
 }
-.nav-contacts::before {
+
+.nav-contacts .item {
+  display: inline-flex;
+  align-items: center;
+}
+.nav-contacts .item::before {
   content: '';
   width: 16px;
   height: 16px;
@@ -137,10 +141,13 @@ body {
   background-position: center;
 }
 
-.icon-mail::before {
+.item.icon-mail::before {
   background-image: url('../images/envelope.svg');
 }
 
+.item.icon-telephone::before {
+  background-image: url('../images/smartphone.svg');
+}
 /* main */
 
 .section {
