@@ -52,9 +52,10 @@ body {
 }
 
 /* header */
-.container.main-nav {
+.header {
   border-bottom: 1px solid #ececec;
-
+}
+.container.main-nav {
   display: flex;
   align-items: center;
 }
@@ -105,13 +106,15 @@ body {
 
 /* Контакты в шапке */
 .nav-contacts {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   margin-left: auto;
 }
 
 .nav-contacts .item + .item {
   margin-left: 50px;
 }
+
 .nav-contacts .contacts {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -124,6 +127,19 @@ body {
 .nav-contacts .contacts:focus {
   color: var(--accent-color);
 }
+.nav-contacts::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-mail::before {
+  background-image: url('../images/envelope.svg');
+}
 
 /* main */
 
@@ -134,10 +150,24 @@ body {
 
 /* hero */
 .hero {
+  display: flex;
+  align-items: center;
   text-align: center;
   background-color: #212121;
-  outline: 2px solid tomato;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
+  background-position: center;
+  background-size: cover;
 }
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
