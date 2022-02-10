@@ -119,6 +119,10 @@ body {
 }
 
 .nav-contacts .contacts {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.33;
@@ -132,13 +136,7 @@ body {
   fill: var(--accent-color);
 }
 
-.nav-contacts .item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-contacts svg {
+.nav-contacts .icon {
   margin-right: 10px;
 }
 /* .nav-contacts .item::before {
@@ -337,14 +335,25 @@ body {
 .clients-list .item + .item {
   margin-left: 30px;
 }
-.clients-list .item {
+
+.clients-list .link {
+  display: inline-flex;
   align-items: center;
-  height: 120px;
-  width: 170px;
+  justify-content: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  fill: var(--icon-bg-color);
+  width: 170px;
+  height: 92px;
+  margin-bottom: 0px;
 }
 
+.clients-list .link:hover {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
 /* секция Наши проекты в портфолио */
 .btn-projects {
   margin-bottom: 50px;
@@ -412,21 +421,65 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer .logo {
+  display: flex;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
 .footer-address {
   color: var(--primary-white-color);
+  font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer-contacts {
   color: var(--footer-text-color);
   text-decoration: none;
+  font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer .container {
   display: flex;
+  align-items: center;
 }
+.footer .contacts {
+  margin-left: 70px;
+}
+
+.footer .item + .item {
+  margin-left: 10px;
+}
+
 .footer .list {
   display: flex;
-  margin-left: 70px;
+}
+
+.footer .title {
+  color: var(--primary-white-color);
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  margin-bottom: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--primary-white-color);
+}
+
+.footer .link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* buttons */
