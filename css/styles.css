@@ -281,9 +281,9 @@ body {
   padding-bottom: 30px;
 }
 
-.team-list img {
+/* .team-list img {
   margin-bottom: 30px;
-}
+} */
 
 .team-list .title {
   color: var(--secondary-title-color);
@@ -300,8 +300,14 @@ body {
   text-align: center;
 
   margin-top: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
+
+.team-list .item-text {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
 .team-contacts {
   display: flex;
   justify-content: center;
@@ -407,7 +413,6 @@ body {
 
   margin-top: 0px;
   margin-bottom: 0px;
-  /* margin-left: 20px; */
 }
 
 .projects-section-title .item-text {
