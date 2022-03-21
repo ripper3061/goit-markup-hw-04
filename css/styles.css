@@ -278,7 +278,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 /* .team-list img {
@@ -313,6 +313,7 @@ body {
   justify-content: center;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 30px;
 }
 
 .team-contacts .item + .item {
