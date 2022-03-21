@@ -156,6 +156,7 @@ body {
 .item.icon-telephone::before {
   background-image: url('../images/smartphone.svg');
 } */
+
 /* main */
 
 .section {
@@ -378,7 +379,6 @@ body {
   letter-spacing: 0.06em;
 
   margin-bottom: 4px;
-  margin-left: 20px;
 }
 
 .projects-section-title > .item {
@@ -387,11 +387,6 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
-}
-
-.projects-section-title > .item img {
-  margin-bottom: 20px;
 }
 
 .projects-section-title > .item:hover {
@@ -412,7 +407,11 @@ body {
 
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
+}
+
+.projects-section-title .item-text {
+  padding: 20px 24px;
 }
 
 /* footer */
