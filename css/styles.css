@@ -362,7 +362,8 @@ body {
   margin-bottom: 0px;
 }
 
-.clients-list .link:hover {
+.clients-list .link:hover,
+.clients-list .link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
