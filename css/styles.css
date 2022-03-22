@@ -487,7 +487,8 @@ body {
   fill: var(--primary-white-color);
 }
 
-.footer .link:hover {
+.footer .link:hover,
+.footer .link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
