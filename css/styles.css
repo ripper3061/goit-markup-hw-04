@@ -268,7 +268,7 @@ body {
 .team-list {
   display: flex;
 
-  fill: var(--icon-bg-color);
+  /* fill: var(--icon-bg-color); */
 }
 
 .team-list .item + .item {
@@ -316,6 +316,8 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
+
+  fill: var(--icon-bg-color);
 }
 
 .team-contacts .item + .item {
