@@ -331,7 +331,8 @@ body {
   margin-bottom: 0px;
 }
 
-.team-contacts .link:hover {
+.team-contacts .link:hover,
+.team-contacts .link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 
