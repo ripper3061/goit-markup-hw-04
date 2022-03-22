@@ -316,8 +316,6 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
-
-  fill: var(--icon-bg-color);
 }
 
 .team-contacts .item + .item {
@@ -331,6 +329,8 @@ body {
   height: 44px;
   width: 44px;
   margin-bottom: 0px;
+
+  fill: var(--icon-bg-color);
 }
 
 .team-contacts .link:hover,
