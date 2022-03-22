@@ -447,10 +447,14 @@ body {
 }
 
 .footer-contacts {
+  margin-bottom: 9px;
+}
+
+.footer-mail,
+.footer-tel {
   color: var(--footer-text-color);
   text-decoration: none;
   font-style: normal;
-  margin-bottom: 9px;
 }
 
 .footer .container {
