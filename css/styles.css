@@ -40,6 +40,11 @@ body {
   /* outline: 2px solid tomato; */
 }
 
+/* убирает 4px у картинок в ссылках */
+img {
+  display: block;
+}
+
 /* убирает точки и margin в списках */
 .list {
   list-style: none;
@@ -395,8 +400,6 @@ body {
 }
 
 .projects-section-title > .item {
-  border: 1px solid var(--card-border-color);
-
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -423,6 +426,9 @@ body {
 }
 
 .projects-section-title .item-text {
+  border: 1px solid var(--card-border-color);
+  border-top: none;
+
   padding: 20px 24px;
 }
 
@@ -519,6 +525,11 @@ body {
   border: 0px;
   border-radius: 4px;
   padding: 10px 32px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 /* кнопки в портфолио */
